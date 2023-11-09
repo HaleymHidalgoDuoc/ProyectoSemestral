@@ -203,7 +203,7 @@ public class VLogin extends javax.swing.JFrame {
         String 
             usr = txt_identificacion.getText(),
             pass= pwdContraseña.getText();
-        if(usr.equals("admin") && pass.equals("admin")){
+        if(usr.equals("admin") && pass.isEmpty()){
             //Abre la vista de Admin
             new VVistaAdministrador().setVisible(true);
             this.setVisible(false);
