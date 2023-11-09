@@ -1508,6 +1508,10 @@ public class VVistaCliente extends javax.swing.JFrame {
 
     private void btn_ojo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ojo1ActionPerformed
         // TODO add your handling code here:
+        
+        Informacion_Personal Ventana = new Informacion_Personal();
+        
+        Ventana.setVisible(true);
     }//GEN-LAST:event_btn_ojo1ActionPerformed
 
     private void btn_lapiz1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lapiz1ActionPerformed
