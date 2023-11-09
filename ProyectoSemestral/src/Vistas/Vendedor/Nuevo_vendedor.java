@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Vistas.Vendedor;
 
@@ -8,13 +8,12 @@ package Vistas.Vendedor;
  *
  * @author cetecom
  */
-public class Nuevo_Vendedor extends javax.swing.JDialog {
+public class Nuevo_vendedor extends javax.swing.JFrame {
 
     /**
-     * Creates new form Nuevo_Vendedor1
+     * Creates new form Nuevo_vendedor1
      */
-    public Nuevo_Vendedor(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public Nuevo_vendedor() {
         initComponents();
     }
 
@@ -48,7 +47,7 @@ public class Nuevo_Vendedor extends javax.swing.JDialog {
         btn_volver = new javax.swing.JButton();
         btn_aceptar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(207, 207, 207));
 
@@ -223,6 +222,11 @@ public class Nuevo_Vendedor extends javax.swing.JDialog {
         btn_volver.setBackground(new java.awt.Color(102, 102, 102));
         btn_volver.setForeground(new java.awt.Color(255, 255, 255));
         btn_volver.setText("VOLVER");
+        btn_volver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_volverActionPerformed(evt);
+            }
+        });
 
         btn_aceptar.setBackground(new java.awt.Color(102, 102, 102));
         btn_aceptar.setForeground(new java.awt.Color(255, 255, 255));
@@ -325,6 +329,12 @@ public class Nuevo_Vendedor extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
+    private void btn_volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_volverActionPerformed
+        // TODO add your handling code here:
+        
+        this.dispose();
+    }//GEN-LAST:event_btn_volverActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -342,28 +352,21 @@ public class Nuevo_Vendedor extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Nuevo_Vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Nuevo_vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Nuevo_Vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Nuevo_vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Nuevo_Vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Nuevo_vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Nuevo_Vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Nuevo_vendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
-        /* Create and display the dialog */
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Nuevo_Vendedor dialog = new Nuevo_Vendedor(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
+                new Nuevo_vendedor().setVisible(true);
             }
         });
     }
