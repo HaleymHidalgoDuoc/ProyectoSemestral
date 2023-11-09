@@ -5,7 +5,8 @@
 package Vistas;
 
 import Vistas.Administrador.VVistaAdministrador;
-import Vistas.Vendedor.VVistaUsuarios;
+import Vistas.Vendedor.VVistaCliente;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -209,9 +210,8 @@ public class VLogin extends javax.swing.JFrame {
             
         }else if(usr.equals("vendedor") && pass.equals("vendedor")){
             //Abre la vista de Vendedor
-            new VVistaUsuarios().setVisible(true);
+            new VVistaCliente().setVisible(true);
             this.setVisible(false);
-            
         }else{
             //Mensaje de error
             JOptionPane.showMessageDialog(null, "Usuario no encontrado");
