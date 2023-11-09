@@ -289,6 +289,11 @@ public class VVistaCliente extends javax.swing.JFrame {
         btn_nuevo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btn_nuevo.setForeground(new java.awt.Color(255, 255, 255));
         btn_nuevo.setText("+ NUEVO");
+        btn_nuevo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_nuevoMouseClicked(evt);
+            }
+        });
         btn_nuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_nuevoActionPerformed(evt);
@@ -1595,10 +1600,13 @@ public class VVistaCliente extends javax.swing.JFrame {
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
         // TODO add your handling code here:
-        Nuevo_Cliente Ventana = new Nuevo_Cliente();
-        
-        Ventana.setVisible(true);
+        new Nuevo_Cliente().setVisible(true);
     }//GEN-LAST:event_btn_nuevoActionPerformed
+
+    private void btn_nuevoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_nuevoMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btn_nuevoMouseClicked
 
     /**
      * @param args the command line arguments
