@@ -4,6 +4,10 @@
  */
 package Vistas;
 
+import Vistas.Administrador.VVistaAdministrador;
+import Vistas.Vendedor.VVistaUsuarios;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author cetecom
@@ -34,11 +38,11 @@ public class VLogin extends javax.swing.JFrame {
         lbl_Identificacion = new javax.swing.JLabel();
         txt_identificacion = new javax.swing.JTextField();
         lbl_Contraseña = new javax.swing.JLabel();
-        txt_Contraseña = new javax.swing.JTextField();
         lbl_olvido_su_contraseña = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         btn_login = new javax.swing.JButton();
+        pwdContraseña = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,12 +74,6 @@ public class VLogin extends javax.swing.JFrame {
         lbl_Contraseña.setText("Contraseña");
         lbl_Contraseña.setToolTipText("");
 
-        txt_Contraseña.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_ContraseñaActionPerformed(evt);
-            }
-        });
-
         lbl_olvido_su_contraseña.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         lbl_olvido_su_contraseña.setText("Olvido su contraseña?");
 
@@ -100,6 +98,17 @@ public class VLogin extends javax.swing.JFrame {
 
         btn_login.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btn_login.setText("Login");
+        btn_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_loginActionPerformed(evt);
+            }
+        });
+
+        pwdContraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pwdContraseñaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -112,8 +121,8 @@ public class VLogin extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lbl_Contraseña)
                             .addComponent(lbl_Identificacion)
-                            .addComponent(txt_identificacion)
-                            .addComponent(txt_Contraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)))
+                            .addComponent(txt_identificacion, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(pwdContraseña)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(67, 67, 67)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -136,8 +145,8 @@ public class VLogin extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addComponent(lbl_Contraseña)
                 .addGap(18, 18, 18)
-                .addComponent(txt_Contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pwdContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
                 .addComponent(lbl_olvido_su_contraseña)
                 .addGap(26, 26, 26)
                 .addComponent(btn_login)
@@ -181,15 +190,39 @@ public class VLogin extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txt_identificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_identificacionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_identificacionActionPerformed
 
-    private void txt_ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_ContraseñaActionPerformed
+    private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
+        //Login Provicional
+        String 
+            usr = txt_identificacion.getText(),
+            pass= pwdContraseña.getText();
+        if(usr.equals("admin") && pass.equals("admin")){
+            //Abre la vista de Admin
+            new VVistaAdministrador().setVisible(true);
+            this.setVisible(false);
+            
+        }else if(usr.equals("vendedor") && pass.equals("vendedor")){
+            //Abre la vista de Vendedor
+            new VVistaUsuarios().setVisible(true);
+            this.setVisible(false);
+            
+        }else{
+            //Mensaje de error
+            JOptionPane.showMessageDialog(null, "Usuario no encontrado");
+
+            
+        }
+    }//GEN-LAST:event_btn_loginActionPerformed
+
+    private void pwdContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwdContraseñaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_ContraseñaActionPerformed
+    }//GEN-LAST:event_pwdContraseñaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -239,7 +272,7 @@ public class VLogin extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_olvido_su_contraseña;
     private javax.swing.JLabel lbl_te_ayudamos;
     private javax.swing.JLabel lbl_tu_experiencia;
-    private javax.swing.JTextField txt_Contraseña;
+    private javax.swing.JPasswordField pwdContraseña;
     private javax.swing.JTextField txt_identificacion;
     // End of variables declaration//GEN-END:variables
 }
