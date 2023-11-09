@@ -5,6 +5,7 @@
 package Vistas.Vendedor;
 
 import Vistas.Administrador.*;
+import Vistas.VLogin;
 import Vistas.Vendedor.*;
 
 /**
@@ -284,6 +285,11 @@ public class VVistaCliente extends javax.swing.JFrame {
 
         btn_cerrar_session.setBackground(new java.awt.Color(204, 204, 204));
         btn_cerrar_session.setText("CERRAR SESION");
+        btn_cerrar_session.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cerrar_sessionActionPerformed(evt);
+            }
+        });
 
         btn_nuevo.setBackground(new java.awt.Color(102, 102, 102));
         btn_nuevo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -1448,7 +1454,7 @@ public class VVistaCliente extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_cerrar_session, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE))
-                .addGap(95, 95, 95)
+                .addGap(116, 116, 116)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btn_nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1504,6 +1510,12 @@ public class VVistaCliente extends javax.swing.JFrame {
 
     private void btn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_registrarActionPerformed
         // TODO add your handling code here:
+        
+        Registrar_Arriendo Ventana =new Registrar_Arriendo();
+        
+        Ventana.setVisible(true);
+        
+        this.dispose();
     }//GEN-LAST:event_btn_registrarActionPerformed
 
     private void btn_ojo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ojo1ActionPerformed
@@ -1614,6 +1626,15 @@ public class VVistaCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_btn_nuevoMouseClicked
+
+    private void btn_cerrar_sessionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cerrar_sessionActionPerformed
+        // TODO add your handling code here:
+        VLogin Ventana = new VLogin();
+        
+        Ventana.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_btn_cerrar_sessionActionPerformed
 
     /**
      * @param args the command line arguments
