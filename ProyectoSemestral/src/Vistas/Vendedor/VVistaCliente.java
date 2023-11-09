@@ -1595,7 +1595,7 @@ public class VVistaCliente extends javax.swing.JFrame {
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
         // TODO add your handling code here:
-        Nuevo_vendedor Ventana = new Nuevo_vendedor();
+        Nuevo_Cliente Ventana = new Nuevo_Cliente();
         
         Ventana.setVisible(true);
     }//GEN-LAST:event_btn_nuevoActionPerformed
