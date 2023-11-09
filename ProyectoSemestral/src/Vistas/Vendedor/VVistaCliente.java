@@ -1448,7 +1448,7 @@ public class VVistaCliente extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_cerrar_session, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE))
-                .addGap(110, 110, 110)
+                .addGap(95, 95, 95)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btn_nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1509,13 +1509,16 @@ public class VVistaCliente extends javax.swing.JFrame {
     private void btn_ojo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ojo1ActionPerformed
         // TODO add your handling code here:
         
-        Informacion_Personal Ventana = new Informacion_Personal();
+        Ojito Ventana = new Ojito();
         
         Ventana.setVisible(true);
     }//GEN-LAST:event_btn_ojo1ActionPerformed
 
     private void btn_lapiz1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lapiz1ActionPerformed
         // TODO add your handling code here:
+        Lapiz Ventana = new Lapiz();
+        
+        Ventana.setVisible(true);
     }//GEN-LAST:event_btn_lapiz1ActionPerformed
 
     private void btn_x1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_x1ActionPerformed
