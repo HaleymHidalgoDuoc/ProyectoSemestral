@@ -98,7 +98,7 @@
                   <Component id="lbl_autto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
                   <Component id="lbl_listadeclientes" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="200" max="32767" attributes="0"/>
+                  <EmptySpace pref="150" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lbl_nombe_de" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
@@ -194,7 +194,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="LISTA DE CLIENTES"/>
+            <Property name="text" type="java.lang.String" value="LISTA DE VENDEDORES"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombe_de">
@@ -252,9 +252,9 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="btn_devolucion" max="32767" attributes="0"/>
-                      <Component id="btn_clientes" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btn_registrar" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnReportes" max="32767" attributes="0"/>
+                      <Component id="btnVendedores" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnVehiculos" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -264,18 +264,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btn_clientes" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="btnVendedores" min="-2" pref="90" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btn_registrar" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="btnVehiculos" min="-2" pref="90" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btn_devolucion" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="btnReportes" min="-2" pref="90" max="-2" attributes="0"/>
                   <EmptySpace pref="178" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btn_clientes">
+        <Component class="javax.swing.JButton" name="btnVendedores">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
@@ -283,16 +283,16 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Clientes"/>
+            <Property name="text" type="java.lang.String" value="Vendedores"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_clientesActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVendedoresActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_devolucion">
+        <Component class="javax.swing.JButton" name="btnReportes">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
@@ -300,16 +300,16 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Devoluci&#xf3;n"/>
+            <Property name="text" type="java.lang.String" value="Reportes"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_devolucionActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReportesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_registrar">
+        <Component class="javax.swing.JButton" name="btnVehiculos">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
@@ -317,13 +317,13 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Registrar"/>
+            <Property name="text" type="java.lang.String" value="Vehiculos"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_registrarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVehiculosActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

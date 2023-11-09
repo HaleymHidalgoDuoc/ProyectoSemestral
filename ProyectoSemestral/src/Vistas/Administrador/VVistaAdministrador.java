@@ -38,9 +38,9 @@ public class VVistaAdministrador extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        btn_clientes = new javax.swing.JButton();
-        btn_devolucion = new javax.swing.JButton();
-        btn_registrar = new javax.swing.JButton();
+        btnVendedores = new javax.swing.JButton();
+        btnReportes = new javax.swing.JButton();
+        btnVehiculos = new javax.swing.JButton();
         btn_cerrar_session = new javax.swing.JButton();
         btn_nuevo = new javax.swing.JButton();
         jPanel18 = new javax.swing.JPanel();
@@ -153,7 +153,7 @@ public class VVistaAdministrador extends javax.swing.JFrame {
         lbl_autto.setText("AUTTO");
 
         lbl_listadeclientes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lbl_listadeclientes.setText("LISTA DE CLIENTES");
+        lbl_listadeclientes.setText("LISTA DE VENDEDORES");
 
         lbl_nombe_de.setText("Nombre de Usuario");
 
@@ -188,7 +188,7 @@ public class VVistaAdministrador extends javax.swing.JFrame {
                 .addComponent(lbl_autto)
                 .addGap(257, 257, 257)
                 .addComponent(lbl_listadeclientes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 200, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 150, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbl_nombe_de, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -227,33 +227,33 @@ public class VVistaAdministrador extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
-        btn_clientes.setBackground(new java.awt.Color(102, 102, 102));
-        btn_clientes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btn_clientes.setText("Clientes");
-        btn_clientes.setBorder(null);
-        btn_clientes.addActionListener(new java.awt.event.ActionListener() {
+        btnVendedores.setBackground(new java.awt.Color(102, 102, 102));
+        btnVendedores.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVendedores.setText("Vendedores");
+        btnVendedores.setBorder(null);
+        btnVendedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_clientesActionPerformed(evt);
+                btnVendedoresActionPerformed(evt);
             }
         });
 
-        btn_devolucion.setBackground(new java.awt.Color(102, 102, 102));
-        btn_devolucion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btn_devolucion.setText("Devolución");
-        btn_devolucion.setBorder(null);
-        btn_devolucion.addActionListener(new java.awt.event.ActionListener() {
+        btnReportes.setBackground(new java.awt.Color(102, 102, 102));
+        btnReportes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnReportes.setText("Reportes");
+        btnReportes.setBorder(null);
+        btnReportes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_devolucionActionPerformed(evt);
+                btnReportesActionPerformed(evt);
             }
         });
 
-        btn_registrar.setBackground(new java.awt.Color(102, 102, 102));
-        btn_registrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btn_registrar.setText("Registrar");
-        btn_registrar.setBorder(null);
-        btn_registrar.addActionListener(new java.awt.event.ActionListener() {
+        btnVehiculos.setBackground(new java.awt.Color(102, 102, 102));
+        btnVehiculos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVehiculos.setText("Vehiculos");
+        btnVehiculos.setBorder(null);
+        btnVehiculos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_registrarActionPerformed(evt);
+                btnVehiculosActionPerformed(evt);
             }
         });
 
@@ -264,20 +264,20 @@ public class VVistaAdministrador extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_devolucion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_clientes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_registrar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnReportes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnVendedores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnVehiculos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btn_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnVendedores, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnVehiculos, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btn_devolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(178, Short.MAX_VALUE))
         );
 
@@ -1480,17 +1480,17 @@ public class VVistaAdministrador extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_clientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_clientesActionPerformed
+    private void btnVendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendedoresActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_clientesActionPerformed
+    }//GEN-LAST:event_btnVendedoresActionPerformed
 
-    private void btn_devolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_devolucionActionPerformed
+    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_devolucionActionPerformed
+    }//GEN-LAST:event_btnReportesActionPerformed
 
-    private void btn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_registrarActionPerformed
+    private void btnVehiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVehiculosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_registrarActionPerformed
+    }//GEN-LAST:event_btnVehiculosActionPerformed
 
     private void btn_ojo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ojo1ActionPerformed
         // TODO add your handling code here:
@@ -1623,9 +1623,10 @@ public class VVistaAdministrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnReportes;
+    private javax.swing.JButton btnVehiculos;
+    private javax.swing.JButton btnVendedores;
     private javax.swing.JButton btn_cerrar_session;
-    private javax.swing.JButton btn_clientes;
-    private javax.swing.JButton btn_devolucion;
     private javax.swing.JButton btn_flechita;
     private javax.swing.JButton btn_icon_buscar;
     private javax.swing.JButton btn_lapiz1;
@@ -1643,7 +1644,6 @@ public class VVistaAdministrador extends javax.swing.JFrame {
     private javax.swing.JButton btn_ojo5;
     private javax.swing.JButton btn_ojo6;
     private javax.swing.JButton btn_ojo7;
-    private javax.swing.JButton btn_registrar;
     private javax.swing.JButton btn_x1;
     private javax.swing.JButton btn_x2;
     private javax.swing.JButton btn_x3;
