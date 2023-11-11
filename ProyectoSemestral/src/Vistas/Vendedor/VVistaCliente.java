@@ -1506,12 +1506,6 @@ public class VVistaCliente extends javax.swing.JFrame {
 
     private void btn_devolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_devolucionActionPerformed
         // TODO add your handling code here:
-        
-        Devolucion_vehiculo Ventana = new Devolucion_vehiculo();
-        
-        Ventana.setVisible(true);
-        
-        this.dispose();
     }//GEN-LAST:event_btn_devolucionActionPerformed
 
     private void btn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_registrarActionPerformed
