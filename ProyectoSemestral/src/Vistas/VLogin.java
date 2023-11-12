@@ -4,7 +4,7 @@
  */
 package Vistas;
 
-import Vistas.Administrador.VVistaAdministrador;
+import Vistas.Administrador.VVendedores;
 import Vistas.Vendedor.VVistaCliente;
 
 import javax.swing.JOptionPane;
@@ -205,7 +205,7 @@ public class VLogin extends javax.swing.JFrame {
             pass= pwdContraseña.getText();
         if(usr.equals("admin") && pass.isEmpty()){
             //Abre la vista de Admin
-            new VVistaAdministrador().setVisible(true);
+            new VVendedores().setVisible(true);
             this.setVisible(false);
             
         }else if(usr.equals("vendedor") && pass.equals("vendedor")){

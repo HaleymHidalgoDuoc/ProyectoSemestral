@@ -4,7 +4,6 @@
  */
 package Vistas.Vendedor;
 
-import Vistas.Administrador.*;
 import Vistas.VLogin;
 import Vistas.Vendedor.*;
 
