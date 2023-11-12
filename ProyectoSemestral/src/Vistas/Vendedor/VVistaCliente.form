@@ -46,7 +46,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel19" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="94" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -98,13 +98,10 @@
                   <Component id="lbl_autto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
                   <Component id="lbl_listadeclientes" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="200" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lbl_nombe_de" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="lbl_puesto" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="lbl_puesto" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
@@ -199,12 +196,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombe_de">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nombre de Usuario"/>
+            <Property name="text" type="java.lang.String" value="Angel Perugini"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_puesto">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Puesto"/>
+            <Property name="text" type="java.lang.String" value="Vendedor"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel3">

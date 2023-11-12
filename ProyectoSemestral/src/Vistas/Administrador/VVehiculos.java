@@ -4,22 +4,19 @@
  */
 package Vistas.Administrador;
 
-import Vistas.Administrador.Vendedores.VVerVendedor;
-import Vistas.Administrador.Vendedores.VEditarVendedor;
-import Vistas.Administrador.Vendedores.VNuevoVendedor;
-import Vistas.Administrador.Vendedores.VBorrarVendedor;
+import Vistas.Administrador.Vehiculos.*;
 import Vistas.VLogin;
 
 /**
  *
  * @author cetecom
  */
-public class VVendedores extends javax.swing.JFrame {
+public class VVehiculos extends javax.swing.JFrame {
 
     /**
      * Creates new form Lista_Clientes
      */
-    public VVendedores() {
+    public VVehiculos() {
         initComponents();
     }
 
@@ -126,7 +123,7 @@ public class VVendedores extends javax.swing.JFrame {
         btn_x12 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Administrador - Vendedores");
+        setTitle("Administrador - Vehiculos");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -153,7 +150,7 @@ public class VVendedores extends javax.swing.JFrame {
         lbl_autto.setText("AUTTO");
 
         lbl_listadeclientes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lbl_listadeclientes.setText("LISTA DE VENDEDORES");
+        lbl_listadeclientes.setText("LISTA DE VEHICULOS");
 
         lbl_nombe_de.setText("Haleym Hidalgo");
 
@@ -392,7 +389,7 @@ public class VVendedores extends javax.swing.JFrame {
 
         jLabel93.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel93.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel93.setText("40");
+        jLabel93.setText("Disponible");
 
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
         jPanel32.setLayout(jPanel32Layout);
@@ -417,7 +414,7 @@ public class VVendedores extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Identificación");
+        jLabel7.setText("Patente");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -541,7 +538,7 @@ public class VVendedores extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("Pedro");
+        jLabel19.setText("Toyota");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -566,7 +563,7 @@ public class VVendedores extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("Nombre");
+        jLabel22.setText("Marca");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -590,7 +587,7 @@ public class VVendedores extends javax.swing.JFrame {
 
         jLabel27.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("321.321.321-7");
+        jLabel27.setText("AA1234");
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -615,7 +612,7 @@ public class VVendedores extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setText("Apellido");
+        jLabel35.setText("Tipo");
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
@@ -639,7 +636,7 @@ public class VVendedores extends javax.swing.JFrame {
 
         jLabel20.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setText("Araya");
+        jLabel20.setText("Camioneta");
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -664,7 +661,7 @@ public class VVendedores extends javax.swing.JFrame {
         jLabel47.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(255, 255, 255));
         jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel47.setText("Nº Arriendos");
+        jLabel47.setText("Disponibilidad");
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
@@ -1155,14 +1152,17 @@ public class VVendedores extends javax.swing.JFrame {
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                .addGap(20, 20, 20)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel50, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                    .addComponent(jPanel49, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                     .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE))))
                 .addGap(20, 20, 20)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1286,7 +1286,7 @@ public class VVendedores extends javax.swing.JFrame {
                         .addGap(130, 130, 130)
                         .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1316,7 +1316,7 @@ public class VVendedores extends javax.swing.JFrame {
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
         // TODO add your handling code here:
-        new VNuevoVendedor().setVisible(true);
+        new VNuevoVehiculo().setVisible(true);
     }//GEN-LAST:event_btn_nuevoActionPerformed
 
     private void btn_nuevoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_nuevoMouseClicked
@@ -1326,17 +1326,17 @@ public class VVendedores extends javax.swing.JFrame {
 
     private void btn_x8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_x8ActionPerformed
         // TODO add your handling code here:
-        new VBorrarVendedor().setVisible(true);
+        new VBorrarVehiculo().setVisible(true);
     }//GEN-LAST:event_btn_x8ActionPerformed
 
     private void btnEditarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarDatosActionPerformed
         // TODO add your handling code here:
-        new VEditarVendedor().setVisible(true);
+        new VEditarVehiculo().setVisible(true);
     }//GEN-LAST:event_btnEditarDatosActionPerformed
 
     private void btnVerDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDatosActionPerformed
         // TODO add your handling code here:
-        new VVerVendedor().setVisible(true);
+        new VVerVehiculo().setVisible(true);
     }//GEN-LAST:event_btnVerDatosActionPerformed
 
     private void btnVehiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVehiculosActionPerformed
@@ -1351,17 +1351,17 @@ public class VVendedores extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnVehiculos1ActionPerformed
 
-    private void btnVehiculos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVehiculos2ActionPerformed
-        // TODO add your handling code here:
-        new VReportes().setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnVehiculos2ActionPerformed
-
     private void btnVendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendedoresActionPerformed
         // TODO add your handling code here:
         new VVendedores().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVendedoresActionPerformed
+
+    private void btnVehiculos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVehiculos2ActionPerformed
+        // TODO add your handling code here:
+        new VReportes().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnVehiculos2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1380,19 +1380,19 @@ public class VVendedores extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VVendedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VVehiculos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VVendedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VVehiculos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VVendedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VVehiculos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VVendedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VVehiculos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VVendedores().setVisible(true);
+                new VVehiculos().setVisible(true);
             }
         });
     }

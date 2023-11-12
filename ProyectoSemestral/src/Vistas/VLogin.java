@@ -203,12 +203,12 @@ public class VLogin extends javax.swing.JFrame {
         String 
             usr = txt_identificacion.getText(),
             pass= pwdContraseña.getText();
-        if(usr.equals("admin") && pass.isEmpty()){
+        if(usr.equals("haleym") && pass.isEmpty()){
             //Abre la vista de Admin
             new VVendedores().setVisible(true);
             this.setVisible(false);
             
-        }else if(usr.equals("vendedor") && pass.equals("vendedor")){
+        }else if(usr.equals("angel") && pass.isEmpty()){
             //Abre la vista de Vendedor
             new VVistaCliente().setVisible(true);
             this.setVisible(false);

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Vistas.Administrador;
+package Vistas.Administrador.Vendedores;
 
 import Vistas.Vendedor.*;
 
@@ -418,12 +418,10 @@ public class VNuevoVendedor extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblDireccion;
     private javax.swing.JLabel lblEmail;
@@ -434,7 +432,6 @@ public class VNuevoVendedor extends javax.swing.JFrame {
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtIdentificacion;
-    private javax.swing.JLabel txtIdentificación2;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNrTelefono;
     // End of variables declaration//GEN-END:variables

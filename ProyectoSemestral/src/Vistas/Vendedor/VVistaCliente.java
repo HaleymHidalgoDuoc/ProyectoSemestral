@@ -156,9 +156,9 @@ public class VVistaCliente extends javax.swing.JFrame {
         lbl_listadeclientes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbl_listadeclientes.setText("LISTA DE CLIENTES");
 
-        lbl_nombe_de.setText("Nombre de Usuario");
+        lbl_nombe_de.setText("Angel Perugini");
 
-        lbl_puesto.setText("Puesto");
+        lbl_puesto.setText("Vendedor");
 
         jLabel6.setText("foto del usuario");
 
@@ -189,12 +189,10 @@ public class VVistaCliente extends javax.swing.JFrame {
                 .addComponent(lbl_autto)
                 .addGap(257, 257, 257)
                 .addComponent(lbl_listadeclientes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 200, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbl_nombe_de, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(lbl_puesto)
-                        .addGap(53, 53, 53)))
+                    .addComponent(lbl_puesto, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
@@ -1468,7 +1466,7 @@ public class VVistaCliente extends javax.swing.JFrame {
                         .addComponent(jLabel16)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
