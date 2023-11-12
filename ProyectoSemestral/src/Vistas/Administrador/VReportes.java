@@ -4,7 +4,7 @@
  */
 package Vistas.Administrador;
 
-import Vistas.Administrador.Vehiculos.*;
+import Vistas.Administrador.Reportes.*;
 import Vistas.VLogin;
 
 /**
@@ -237,6 +237,11 @@ public class VReportes extends javax.swing.JFrame {
 
         btnGenerarReporte3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnGenerarReporte3.setText("Generar Reporte");
+        btnGenerarReporte3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarReporte3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpnReporte3Layout = new javax.swing.GroupLayout(jpnReporte3);
         jpnReporte3.setLayout(jpnReporte3Layout);
@@ -247,9 +252,9 @@ public class VReportes extends javax.swing.JFrame {
                 .addComponent(lblTitulo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jpnReporte3Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(25, 25, 25)
                 .addComponent(btnGenerarReporte3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
         jpnReporte3Layout.setVerticalGroup(
             jpnReporte3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,6 +276,11 @@ public class VReportes extends javax.swing.JFrame {
 
         btnGenerarReporte1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnGenerarReporte1.setText("Generar Reporte");
+        btnGenerarReporte1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarReporte1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpnReporte1Layout = new javax.swing.GroupLayout(jpnReporte1);
         jpnReporte1.setLayout(jpnReporte1Layout);
@@ -281,9 +291,9 @@ public class VReportes extends javax.swing.JFrame {
                 .addComponent(lblTitulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jpnReporte1Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(25, 25, 25)
                 .addComponent(btnGenerarReporte1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
         jpnReporte1Layout.setVerticalGroup(
             jpnReporte1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -305,6 +315,11 @@ public class VReportes extends javax.swing.JFrame {
 
         btnGenerarReporte4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnGenerarReporte4.setText("Generar Reporte");
+        btnGenerarReporte4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarReporte4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpnReporte4Layout = new javax.swing.GroupLayout(jpnReporte4);
         jpnReporte4.setLayout(jpnReporte4Layout);
@@ -315,9 +330,9 @@ public class VReportes extends javax.swing.JFrame {
                 .addComponent(lblTitulo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jpnReporte4Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(25, 25, 25)
                 .addComponent(btnGenerarReporte4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
         jpnReporte4Layout.setVerticalGroup(
             jpnReporte4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -339,6 +354,11 @@ public class VReportes extends javax.swing.JFrame {
 
         btnGenerarReporte2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnGenerarReporte2.setText("Generar Reporte");
+        btnGenerarReporte2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarReporte2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpnReporte2Layout = new javax.swing.GroupLayout(jpnReporte2);
         jpnReporte2.setLayout(jpnReporte2Layout);
@@ -349,9 +369,9 @@ public class VReportes extends javax.swing.JFrame {
                 .addComponent(lblTitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jpnReporte2Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(25, 25, 25)
                 .addComponent(btnGenerarReporte2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
         jpnReporte2Layout.setVerticalGroup(
             jpnReporte2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -425,6 +445,28 @@ public class VReportes extends javax.swing.JFrame {
         new VReportes().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVehiculos2ActionPerformed
+
+    private void btnGenerarReporte1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarReporte1ActionPerformed
+        // TODO add your handling code here:
+        new VVentanaReporte1().setVisible(true);
+    }//GEN-LAST:event_btnGenerarReporte1ActionPerformed
+
+    private void btnGenerarReporte2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarReporte2ActionPerformed
+        // TODO add your handling code here:
+        new VVentanaReporte2().setVisible(true);
+    }//GEN-LAST:event_btnGenerarReporte2ActionPerformed
+
+    private void btnGenerarReporte3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarReporte3ActionPerformed
+        // TODO add your handling code here:
+        new VTop5().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnGenerarReporte3ActionPerformed
+
+    private void btnGenerarReporte4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarReporte4ActionPerformed
+        // TODO add your handling code here:
+        new VValorRecaudado().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnGenerarReporte4ActionPerformed
 
     /**
      * @param args the command line arguments
