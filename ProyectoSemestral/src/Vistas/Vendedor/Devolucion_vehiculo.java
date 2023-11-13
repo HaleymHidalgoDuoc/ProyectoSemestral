@@ -80,9 +80,9 @@ public class Devolucion_vehiculo extends javax.swing.JFrame {
         lbl_listadeclientes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbl_listadeclientes.setText("Registrar Arriendo");
 
-        lbl_nombe_de.setText("Nombre de Usuario");
+        lbl_nombe_de.setText("Angel Perugini");
 
-        lbl_puesto.setText("Puesto");
+        lbl_puesto.setText("Vendedor");
 
         jLabel6.setText("foto del usuario");
 
@@ -113,12 +113,10 @@ public class Devolucion_vehiculo extends javax.swing.JFrame {
                 .addComponent(lbl_autto)
                 .addGap(257, 257, 257)
                 .addComponent(lbl_listadeclientes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 228, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_nombe_de, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(lbl_puesto)
-                        .addGap(53, 53, 53)))
+                    .addComponent(lbl_nombe_de)
+                    .addComponent(lbl_puesto))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
@@ -246,10 +244,10 @@ public class Devolucion_vehiculo extends javax.swing.JFrame {
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel11Layout.createSequentialGroup()
-                            .addGap(269, 269, 269)
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGap(211, 211, 211)
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(199, 199, 199)
@@ -303,7 +301,7 @@ public class Devolucion_vehiculo extends javax.swing.JFrame {
                         .addComponent(btn_cerrar_session, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
+                        .addGap(50, 50, 50)
                         .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
