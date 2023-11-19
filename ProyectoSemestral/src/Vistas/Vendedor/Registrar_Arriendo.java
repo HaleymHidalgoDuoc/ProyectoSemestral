@@ -90,9 +90,9 @@ public class Registrar_Arriendo extends javax.swing.JFrame {
         lbl_listadeclientes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbl_listadeclientes.setText("Registrar Arriendo");
 
-        lbl_nombe_de.setText("Nombre de Usuario");
+        lbl_nombe_de.setText("Angel Perugini");
 
-        lbl_puesto.setText("Puesto");
+        lbl_puesto.setText("Vendedor");
 
         jLabel6.setText("foto del usuario");
 
@@ -123,12 +123,10 @@ public class Registrar_Arriendo extends javax.swing.JFrame {
                 .addComponent(lbl_autto)
                 .addGap(257, 257, 257)
                 .addComponent(lbl_listadeclientes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 228, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_nombe_de, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(lbl_puesto)
-                        .addGap(53, 53, 53)))
+                    .addComponent(lbl_nombe_de)
+                    .addComponent(lbl_puesto))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
